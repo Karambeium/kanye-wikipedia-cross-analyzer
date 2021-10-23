@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'titillium-light';
+    src: url('./TitilliumWeb-Light.ttf')
+    ;
+}
+
+@font-face {
+    font-family: 'titillium-semibold';
+    src: url('./TitilliumWeb-SemiBold.ttf');
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 10px;
+}
+
+body {
+    background-color: skyblue;
+}
+
+button {
+    width: auto;
+}
+
+.kanye-container {
+    dislpay: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <!-- <head> -->
+        <title>Kanye Quote Imagizer!</title>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel = "stylesheet" href = "material.min.css">
+        <link rel = "icon" href = "./kanye-icon.jpeg">
+        <script src = "material.min.js"></script>
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- </head> -->
+    <body style="padding-bottom: 20px;">
+        <h1 style="text-align: center; font-family: 'titillium-semibold'; margin:0px;">Imagizing Kanye's Quotes!</h1>
+        <h5 style="font-family: 'titillium-light'; text-align: center; padding-left: 25px; padding-right: 25px; padding-top:15px; margin:0px;">
+            This website will allow you to generate random quotes from Kanye West. 
+            You can then turn each word from the quote into a Wikipedia search. 
+            If Wikipedia has an article with the exact title as the quote, you will be able to see an image of that word. 
+            The site also keeps track of how many words from Kanye are "Imagiazable", that is, how many words have a Wikipedia article for them. 
+            This ratio updates for each word. Enjoy!
+        </h5>
+        <h3 id="quote" style="text-align: center; color: black; font-family: 'titillium-light';"></h3>
+        <h3 id="word-tally" style="text-align: center; font-family: 'titillium-light';"></h3>
+        <h4 id="current-quote-word-tally" style="text-align: center; font-family: 'titillium-light';"></h4>
+        <div id="kanye-container" style="display:flex; align-items:center; justify-content: space-evenly; font-family: 'titillium-light';">
+            <button class="mdl-button mdl-js-button mdl-button--raised" onClick="getKanyeQuote()" style="font-family: 'titillium-semibold'; font-size: 23px;">Get Kanye Quote</button>
+            <button  class="mdl-button mdl-js-button mdl-button--raised" onClick="getImages()" style="font-family: 'titillium-semibold'; font-size: 23px;">Imagize the Quote</button>
+            <div id="stats">
+                <h5 style="font-family: 'titillium-semibold'; font-size:23px;">Imagizable Words from this Quote:</h5><p id="word-list" style="font-family: 'titillium-light'; font-size:20px;"></p>
+            </div>
+        </div>
+        <br><div id="imagized" style="display:flex; justify-content: space-evenly; align-items: center;"></div>
+    </body>
+</html>
