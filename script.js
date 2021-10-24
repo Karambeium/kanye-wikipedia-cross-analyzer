@@ -66,7 +66,7 @@ function getImages() {
 
 async function findImage(element) {
     try {
-        let wikiURL = "http://en.wikipedia.org/w/api.php?action=query&titles=" + element + "&prop=pageimages&format=json&pithumbsize=100&origin=*";
+        let wikiURL = "https://en.wikipedia.org/w/api.php?action=query&titles=" + element + "&prop=pageimages&format=json&pithumbsize=100&origin=*";
         console.log(wikiURL);
         currentWikiData = await fetch(
             wikiURL, {
